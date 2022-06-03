@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <div *ngIf="messagesList === undefined">Aucun message à afficher</div>
+    <div *ngFor="let message of messagesList">
+      <li>{{message.auteur.prenom | uppercase }} a écrit le {{message.date | date: 'dd/MM/yyyy'}} à {{message.date | date : 'HH:mm'}}:</li>
+      <p class="message">{{message.text}}</p>
+    </div>
+  </ul>
+</div>

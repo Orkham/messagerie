@@ -1,0 +1,5 @@
+<div>
+  <h2>Personnes actives :</h2>
+  <p *ngIf="users === undefined">Aucun participant présent</p>
+  <p class="userName" *ngFor="let user of users">{{user.prenom}}</p>
+</div>

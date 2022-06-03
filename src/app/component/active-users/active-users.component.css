@@ -1,0 +1,13 @@
+h2{
+  text-align: center;
+}
+
+.userName{
+  text-align: center;
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+.userName:hover{
+  cursor: pointer;
+}
